@@ -1,0 +1,31 @@
+Some notes that i took while i was doing this project.
+
+
+HTTP headers are the core part of HTTP requests and responses, and they carry information about the client browser, the request page, the server, etc...
+There are methods that indicates what kind of request we are using. Commonly we use GET,POST and HEAD.
+GET - Retrieves html, images, etc.There is a query string in the path (e.g GET /test.php?name=Bruno HTTP/1.1)
+POST - Send data do the server ( we can still use GET to send data)(commonly sent by web forms)There is no query string in the path (e.g POST /test.php HTTP/1.1)
+HEAD - HEAD is similar to GET, except the server does not return the content in the HTTP response(e g if you have link's on your website you can send HEAD requests to them to check if they are broken)
+
+
+
+cURL allows transfer of data across a wide variety of protocols, and is a very powerful system. It's widely used as a way to send data across websites, including things like API's.
+curl_init - initializes a new session and return a cURL handle for use with ...setopt, ...exec.
+curl_setopt_array - sets and option on the given cURL session handle.
+curl_exec - method which will execute the cURL request.
+CURLOPT_RETURNTRANSFER - Return the response as a string instead of outputting it to the screen
+CURLOPT_URL - URL to send request to
+CURLOPT_USERAGENT - Useragent string to use for request
+(codular.com(curl-with-php)
+
+
+The foreach construct provides an easy way to iterate over arrays.Foreach works only on arrays and objects.
+
+foreach(array_expression as $value)
+	statement
+
+On each iteration, the value of the current element is assigned to $value and the internal array pointer is advanced by one.
+
+
+
+
